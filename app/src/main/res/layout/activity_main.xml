@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_main"
+    android:background="#ffffff"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.rugveddarwhekar.wings2017_18.MainActivity">
+
+<!-- The primary full-screen view. This can be replaced with whatever view
+     is needed to present your content, e.g. VideoView, SurfaceView,
+     TextureView, etc. -->
+    <!--<ScrollView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content">-->
+
+    <FrameLayout
+    android:id="@+id/fullscreen_content"
+    android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#ffffff"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hi and Welcome!"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textColor="#4990E2"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:id="@+id/hi_text"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/wings_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="125dp"
+            android:layout_alignTop="@id/hi_text"
+            android:id="@+id/wings_logo"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textAlignment="center"
+            android:layout_alignTop="@+id/wings_logo"
+            android:layout_marginTop="200dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur
+adipiscing elit. Donec eu felis tellus. Sed a
+nibh eu mauris elementum venenatis ac.
+Excepteur sint occaecat cupidatat non
+proident,sunt in culpa qui officia deserunt
+mollitanim id est laborum."
+            android:textSize="14sp"
+            android:textColor="#4990E2"
+            android:id="@+id/desc_text"/>
+
+        <Button
+            android:layout_width="215dp"
+            android:layout_height="53dp"
+            android:id="@+id/get_started"
+            android:background="@drawable/but_start"
+            android:layout_alignTop="@+id/desc_text"
+            android:layout_marginTop="175dp"
+            android:elevation="20dp"
+            android:layout_centerHorizontal="true"
+            android:onClick="getStarted" />
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>
+    <!--</ScrollView>-->
+<!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="#ffffff"/>-->
+
+
+<!-- This FrameLayout insets its children based on system windows using
+     android:fitsSystemWindows. -->
+
+
+</FrameLayout>
